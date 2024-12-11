@@ -1,0 +1,35 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Spinner для выбора периода -->
+    <Spinner
+        android:id="@+id/spinner_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tv_current_limit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Limit: Not Set"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btn_set_limit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Monthly Limit"
+        android:layout_marginBottom="16dp"/>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pie_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp" />
+</LinearLayout>
